@@ -541,6 +541,14 @@ svg:hover{
     padding-right: 50px;
   }
 
+  .header h1{
+    font-size: 35px;
+  }
+
+  .header h2{
+    font-size: 16px;
+  }
+
   .button{
     color: #000000;
   }
