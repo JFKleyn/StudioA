@@ -537,8 +537,8 @@ svg:hover{
 
 @media(max-width:600px){
   .navigation{
-    gap: 10px;
-    padding-right: 50px;
+    gap: 5px;
+    padding-right: 40px;
   }
 
   .header h1{
@@ -554,7 +554,7 @@ svg:hover{
   }
 
   .navigation a{
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .p1 p{
@@ -562,7 +562,7 @@ svg:hover{
   }
 
   .image1 img{
-    width: 300px;
+    width: 200px;
   }
 
   .p2 {
