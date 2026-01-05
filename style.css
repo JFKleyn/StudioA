@@ -537,16 +537,16 @@ svg:hover{
 
 @media(max-width:600px){
   .navigation{
-    gap: 5px;
+    gap: 15px;
     padding-right: 40px;
   }
 
   .header h1{
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .header h2{
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .button{
@@ -558,7 +558,7 @@ svg:hover{
   }
 
   .p1 p{
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .image1 img{
@@ -573,8 +573,43 @@ svg:hover{
     width: 300px;
   }
 
+  .copyright{
+    font-size: 16px;
+  }
+
   .address{
-    font-size: 8px;
+    font-size: 10px;
+  }
+
+  .logo-container{
+    width: 160px;
+  }
+
+  .navigation-container{
+    grid-template-columns: 140px 1fr;
+    gap: 0px;
+  }
+
+  .container3{
+    padding: 40px 15px;
+  }
+
+  .container3 h1{
+    font-size: 32px;
+  }
+
+  .container3 li{
+    font-size: 22px;
+    padding: 0 10px;
+  }
+
+  .container3 ul li ul{
+    padding: 10px 0 0 0;
+  }
+
+  .container3 ul li ul li{
+    font-size: 18px;
+    width: 100%;
   }
 }
 
