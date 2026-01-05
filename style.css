@@ -535,7 +535,7 @@ svg:hover{
   .address{order: 3;}
 }
 
-@media(max-width:460px){
+@media(max-width:600px){
   .navigation{
     gap: 10px;
     padding-right: 50px;
