@@ -28,5 +28,13 @@ cards.forEach((card) => {
   card.style.backfaceVisibility = 'hidden';
 });
 
+cards.forEach((card) => {
+  observer.observe(card);
+  const overlay = card.querySelector('.overlay');
+  overlay.style.transform = 'translateZ(0)';
+  overlay.style.backfaceVisibility = 'hidden';
+});
+
+
 
 
