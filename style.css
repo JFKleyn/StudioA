@@ -203,6 +203,7 @@ nav a:active{
   cursor: pointer;
   transform: translateZ(0); /* triggers GPU acceleration */
   backface-visibility: hidden;
+  overflow: hidden;
 }
 
 .card img {
