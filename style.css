@@ -201,6 +201,8 @@ nav a:active{
   width: 100%;
   height: 100%;
   cursor: pointer;
+  transform: translateZ(0); /* triggers GPU acceleration */
+  backface-visibility: hidden;
 }
 
 .card img {
