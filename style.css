@@ -634,6 +634,11 @@ svg:hover{
 
 @media (max-width: 768px) {
   
+  @media (hover: none) {
+  .overlay {
+    opacity: 0 !important;
+  }
+}
 
   .container4{
     grid-template-columns: 1fr;
