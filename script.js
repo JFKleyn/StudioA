@@ -2,31 +2,21 @@ document.getElementById("contact-btn").addEventListener("click", function () {
     window.location.href = "contact.html";
   });
 
-const cards = document.querySelectorAll('.card');
+const targets = document.querySelectorAll('.image-wrapper');
 
 const observer = new IntersectionObserver(
-
-
   (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('in-view');
-      } else {
-        entry.target.classList.remove('in-view'); // optional, smooth out with CSS
-      }
+    entries.forEach(entry => {
+      entry.target.classList.toggle('in-view', entry.isIntersecting);
     });
   },
   {
-    threshold: 0.4,
-    rootMargin: '0px',
+    threshold: 0.4
   }
 );
 
+targets.forEach(target => observer.observe(target));
 
-cards.forEach((card) => {
-  observer.observe(card);
-  const overlay = card.querySelector('.overlay');
-});
 
 
 
