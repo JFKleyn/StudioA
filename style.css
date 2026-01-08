@@ -249,11 +249,10 @@ nav a:active{
   padding: 20px;
   text-align: center;
   opacity: 0;
-  transform: translateY(0); /* keep fixed to avoid “scale” effect */
   transition: opacity 0.4s ease; /* only fade */
   border-radius: inherit;
   pointer-events: none; /* overlay doesn’t block clicks */
-  transform: translateZ(0);
+  transform: translate3d(0, 0, 0);
   will-change: opacity;
 }
 
