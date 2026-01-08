@@ -2,7 +2,7 @@ document.getElementById("contact-btn").addEventListener("click", function () {
     window.location.href = "contact.html";
   });
 
-const targets = document.querySelectorAll('.image-wrapper');
+const targets = document.querySelectorAll('overlay');
 
 const observer = new IntersectionObserver(
   (entries) => {
