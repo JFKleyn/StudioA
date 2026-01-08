@@ -221,6 +221,7 @@ nav a:active{
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
+  contain:layout paint;
 }
 
 @supports (-webkit-touch-callout: none) {
