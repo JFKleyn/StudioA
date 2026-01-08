@@ -654,6 +654,10 @@ svg:hover{
   opacity: 1;
   }
 
+  .image-wrapper{
+    max-width: 310px;
+  }
+
  
   
   .overlay li{
