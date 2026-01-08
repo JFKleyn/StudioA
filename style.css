@@ -225,7 +225,10 @@ nav a:active{
 
 .overlay {
   position: absolute;
-  inset: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.35);
@@ -264,6 +267,14 @@ nav a:active{
   grid-template-columns: repeat(3, 1fr);     
   width: 100%;                     
   gap: 20px;              
+}
+
+#gallery-container{
+  background-color: #ECECEC;
+}
+
+#gallery{
+  background-color: #ECECEC;
 }
 
 .container4 img {
