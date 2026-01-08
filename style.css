@@ -221,7 +221,6 @@ nav a:active{
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
-  contain:layout paint;
 }
 
 @supports (-webkit-touch-callout: none) {
@@ -656,9 +655,8 @@ svg:hover{
   .socials{order: 1;}
   .address{order: 3;}
 
-  .card.in-view .overlay {
+  .image-wrapper.in-view .overlay {
   opacity: 1;
-  transform: translateY(0);
   }
 
  
