@@ -664,9 +664,7 @@ svg:hover{
   font-size: 13px;
   }
 
-  .container4 img{
-    width: 300px;
-  }
+
 
 
   
@@ -709,7 +707,7 @@ svg:hover{
 
   .image1 img{
     min-width: 0px;
-    max-width: 300px;
+    max-width: 310px;
     margin: 0 auto;
   }
 
