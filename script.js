@@ -5,6 +5,8 @@ document.getElementById("contact-btn").addEventListener("click", function () {
 const cards = document.querySelectorAll('.card');
 
 const observer = new IntersectionObserver(
+
+
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -24,8 +26,6 @@ const observer = new IntersectionObserver(
 cards.forEach((card) => {
   observer.observe(card);
   const overlay = card.querySelector('.overlay');
-  overlay.style.transform = 'translateZ(0)';
-  overlay.style.backfaceVisibility = 'hidden';
 });
 
 
