@@ -289,13 +289,11 @@ nav a:active{
   overflow: hidden;        
 }
 
-#gallery-container{
+.gallery{
   background-color: #ECECEC;
 }
 
-#gallery{
-  background-color: #ECECEC;
-}
+
 
 .container4 h2{
   text-align: center;
