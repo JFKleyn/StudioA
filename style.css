@@ -384,7 +384,7 @@ small{
 }
 
 .container6{
-  height: 1000px;
+
   align-items: center;
     background-image: url("images/Backround.webp"); 
   background-size: cover;       
@@ -405,10 +405,16 @@ small{
    grid-template-columns: 1fr 1fr 1fr;
 }
 
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .form-container{
   background-color: #ECECEC;
   padding: 2rem;
-  max-width: 600px;         
+  width: 600px;         
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
   margin: 0 auto; 
   border-radius: 10px;  
@@ -416,7 +422,7 @@ small{
 }
 
 .form-container h2{
-  font-size: 50px;
+  font-size: 40px;
   padding-bottom: 24px;
   text-align: center;
 }
@@ -592,13 +598,33 @@ svg:hover{
     padding-right: 70px;
   }
 
+  .contact{
+    background: none;
+  }
+
   .form-container{
-    max-width: 500px;
+    margin: 2rem;
+  }
+
+  .form-container h2{
+    font-size: 24px;
   }
 
   .image5 {
     max-width: 500px;
     margin: 0 auto;
+  }
+
+  label{
+    font-size: 20px;
+  }
+
+  input{
+    font-size: 12px;
+  }
+
+  .form-group textarea{
+    font-size: 12px;
   }
 
 }
