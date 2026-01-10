@@ -601,38 +601,53 @@ svg:hover{
     padding-right: 70px;
   }
 
-/* Fancy popup example */
+/* Fancy custom popup */
 #popup {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #ffe6be;
+  transform: translate(-50%, -50%) scale(0.8);
+  background-color: #ffe6be; /* amber/light theme color */
   color: #000;
   padding: 2rem 3rem;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
   text-align: center;
   font-size: 1.2rem;
   z-index: 9999;
   display: none;
-  animation: popupShow 0.3s ease-out;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+#popup.show {
+  display: block;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#popup p {
+  margin-bottom: 1.5rem;
+  font-weight: 500;
 }
 
 #popup button {
-  margin-top: 1rem;
   background-color: #000;
   color: #ffe6be;
   border: none;
-  border-radius: 6px;
-  padding: 8px 16px;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-@keyframes popupShow {
-  0% { opacity: 0; transform: translate(-50%, -60%); }
-  100% { opacity: 1; transform: translate(-50%, -50%); }
+#popup button:hover {
+  background-color: #333;
+  transform: scale(1.05);
 }
+
 
 
 
