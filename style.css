@@ -383,8 +383,11 @@ small{
   color: #e74c3c;
 }
 
-.container6{
+#contact{
+    background: none;
+  }
 
+.container6{
   align-items: center;
     background-image: url("images/Backround.webp"); 
   background-size: cover;       
@@ -418,7 +421,7 @@ small{
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
   margin: 0 auto; 
   border-radius: 10px;  
-  margin-top: 50px;     
+  margin: 100px 50px;     
 }
 
 .form-container h2{
@@ -598,13 +601,7 @@ svg:hover{
     padding-right: 70px;
   }
 
-  .contact{
-    background: none;
-  }
-
-  .form-container{
-    margin: 2rem;
-  }
+  
 
   .form-container h2{
     font-size: 24px;
