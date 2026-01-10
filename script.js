@@ -15,35 +15,23 @@ const observer = new IntersectionObserver(
 
 targets.forEach(target => observer.observe(target));
 
-const form = document.getElementById("contact-form");
-const popup = document.getElementById("popup");
-const closeBtn = document.getElementById("close-popup");
+const handleSubmit = event => {
+  event.preventDefault();
 
-form.addEventListener("submit", function(event) {
-  event.preventDefault(); // ⚠️ Prevent default Netlify popup
+  const myForm = event.target;
+  const formData = new FormData(myForm);
 
-  const formData = new FormData(form);
-
-  // Submit to Netlify using fetch
   fetch("/", {
     method: "POST",
-    body: formData,
-    headers: { "Accept": "application/x-www-form-urlencoded" }
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
   })
-  .then(() => {
-    // Show custom popup
-    popup.style.display = "block";
-    form.reset();
-  })
-  .catch((error) => {
-    alert("There was an error submitting the form.");
-    console.error(error);
-  });
-});
+    .then(() => alert("Thank you for your submission"))
+    .catch(error => alert(error));
+};
 
-closeBtn.addEventListener("click", () => {
-  popup.style.display = "none";
-});
+document.querySelector("form").addEventListener("submit", handleSubmit);
+
 
 
 
