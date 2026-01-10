@@ -26,11 +26,14 @@ const handleSubmit = event => {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: new URLSearchParams(formData).toString()
   })
-    .then(() => alert("Thank you for your submission"))
+    .then(() => {
+    document.getElementById("popup").style.display = "block";
+    myForm.reset();
+})
     .catch(error => alert(error));
 };
 
-document.querySelector("form").addEventListener("submit", handleSubmit);
+document.getElementById("contact-form").addEventListener("submit", handleSubmit);
 
 
 
