@@ -3,95 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>STUDIO AMBERLEIGH</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="../style.css">
   <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="hero-container" id="hero">
-    <div class="navigation-container">
+
+   <div class="container6" id="container6">
+
+    <div class="navigation-container" id="nav-container">
       <div class="logo-container">
-        <img src="images/Logo.webp" class="logo" alt="Logo">
+        <img src="../images/Logo.webp" class="logo" alt="Logo">
         <h2>STUDIO AMBERLEIGH</h2>
       </div>
-      <nav class="navigation">
-        <a href="contact/index.html" id="contactus">CONTACT</a>
-        <a href="gallery.html" id="about">GALLERY</a>
-        <a href="director.html" id="ourdirector">DIRECTOR</a>
+      <nav class="navigation" id="nav">
+        <a href="../index.html" id="HOME">HOME</a>
+        <a href="../gallery.html" id="about">GALLERY</a>
+        <a href="../director.html" id="ourdirector">DIRECTOR</a>
       </nav>
     </div>
-    <div class="header">
-      <h1>STUDIO AMBERLEIGH</h1>
-      <h2>PROFFESIONAL STUDIO OF PERFORMING ARTS</h2>
-      <button id="contact-btn">CONTACT US</button>
+    <div class="form">
+    <div class="form-container">
+      <h2>CONTACT US</h2>
+    <form id="contact-form" name="contact" action="/contact/success" method="POST" data-netlify="true">
+      
+
+        <div class="form-group">
+          <label for="firstname">First Name</label>
+          <input type="text" name="firstname" placeholder="First Name" />
+        </div>
+
+        <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input type="text"name="lastname" placeholder="Last Name" />
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" name="email" placeholder="Email" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea name="message" placeholder="Message" rows="4" ></textarea>
+        </div>
+
+        <button type="submit" id="submit-btn">Submit</button> 
+    </form>
     </div>
-  </div>
-  <div class="container1">
-    <div class="image1">
-      <img src="images/image 1.webp" alt="image1">
-    </div>
-    <div class="p1">
-      <p class="about">STUDIO AMBERLEIGH is a creative space dedicated to delivering the highest level of training, expression, and artistic growth through the performing arts. We provide high-quality instruction in disciplines such as professional vocals, drama, music, and performance-based movement, supporting students of all ages and experience levels. The Studio is designed to be a welcoming, inclusive environment where creativity, confidence, and discipline are developed side by side. Through structured classes, rehearsals, and performance opportunities, students build technical skills while also learning teamwork, communication, and self-expression. More than just a place to train, our Studio is a community. We focus on nurturing each individual’s potential, encouraging artistic exploration, and fostering a lifelong appreciation for the performing arts, whether students pursue performance professionally or simply for personal growth and enjoyment. </p>
-    </div> 
-  </div>
-  <div class="container3" id="container3">
-    <h1>WHAT WE OFFER</h1>
-    <ul>
-      <li>World Class Vocal Coaching
-        <ul>
-          <li>From pop to jazz to all things vocal, we help you master each genre with precise personalised training to shape your talent and take your dreams to new heights.</li>
-        </ul>  
-      </li>
-      <li>Industry Top-Notch Programs
-        <ul>
-          <li>Regional, National and International Competition Prep</li>
-          <li>Internationally Recognised Graded Vocal Exams and Syllabi</li>
-          <li>In-Studio Recording Opportunities</li>
-          <li>Confidence Building, Personal Growth and Leadership Training</li>
-        </ul>
-      </li>
-      <li>Professional Gigs and Entertainment
-        <ul>
-          <li>We provide opportunities to to showcase your talent in real-world performance and events</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-  <div class="container4">
-    <div class="card">
-      <div class="image-wrapper image6">
-        <div class="overlay">
-        <p>To be a leading performing arts studio that inspires creativity, confidence, and excellence, empowering individuals to express themselves artistically and reach their full potential through the performing arts.</p>
       </div>
+
+      <div id="popup" style="display:none;">
+        <p>Submission received!</p>
+        <button id="close-popup">Close</button>
       </div>
-      <h2>VISION</h2>
-    </div>
-    <div class="card">
-      <div class="image-wrapper image2">
-        <div class="overlay">
-          <p>Our mission is to provide high-quality performing arts education in a supportive and inclusive environment. We are committed to nurturing artistic skill, personal growth, and self-expression through structured training, creative exploration, and meaningful performance experiences for students of all ages and abilities. </p>
-        </div>
-        </div>
-      <h2>MISSION</h2>
-    </div>
-    <div class="card">
-      <div class="image-wrapper image3">
-        <div class="overlay">
-          <li>To deliver professional instruction across a range of performing arts disciplines that develops strong technical and artistic foundations. </li>
-          <li>To create a safe, inclusive, and encouraging learning environment where all students feel valued and supported. </li>
-          <li>To foster creativity, confidence, discipline, and teamwork through regular training and performance opportunities. </li>
-          <li>To support individual growth by recognizing and nurturing each student’s unique abilities and interests. </li>
-          <li>To provide opportunities for performance, collaboration, and community engagement that enhance real-world experience. </li>
-          <li>To promote a lifelong appreciation for the performing arts, whether pursued recreationally or professionally. </li>
-        </div>
-        </div>
-      <h2>OBJECTIVES</h2>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="copyright">
-      ©2026 Studio Amberleigh (Pty) Ltd
-    </div>
+
+    <div class="footer" id="contact">
+      <div class="copyright">
+        ©2026 Studio Amberleigh (Pty) Ltd
+      </div>
 
       <div class="socials">
         <div class="instagram">
@@ -110,11 +80,11 @@
           </a>
         </div>
       </div>
-    <div class="address">
-      Strangeways Office Park, 6 Delamore Road, Hillcrest, KwaZulu-Natal
+      <div class="address">
+        Strangeways Office Park, 6 Delamore Road, Hillcrest, KwaZulu-Natal
+      </div>
     </div>
-  </div>
- 
-  <script src="script.js"></script>
+    </div>
+
 </body>
 </html>
