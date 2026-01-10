@@ -2,6 +2,10 @@ document.getElementById("contact-btn").addEventListener("click", function () {
     window.location.href = "contact.html";
   });
 
+  document.getElementById("return-btn").addEventListener("click", function () {
+    window.location.href = "contact.html";
+  });
+
 const targets = document.querySelectorAll('.image-wrapper');
 
 const observer = new IntersectionObserver(
@@ -16,7 +20,7 @@ const observer = new IntersectionObserver(
 targets.forEach(target => observer.observe(target));
 
 const handleSubmit = event => {
-  event.preventDefault();
+  event.preventDefault(); // prevent default form submission
 
   const myForm = event.target;
   const formData = new FormData(myForm);
@@ -27,13 +31,15 @@ const handleSubmit = event => {
     body: new URLSearchParams(formData).toString()
   })
     .then(() => {
-    document.getElementById("popup").style.display = "block";
-    myForm.reset();
-})
+      // redirect to success page after successful submission
+      window.location.href = "/contact/success";
+    })
     .catch(error => alert(error));
 };
 
-document.getElementById("contact-form").addEventListener("submit", handleSubmit);
+// attach the handler to your form
+document.querySelector("form[name='contact']").addEventListener("submit", handleSubmit);
+
 
 
 
