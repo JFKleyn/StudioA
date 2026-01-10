@@ -15,7 +15,7 @@ const observer = new IntersectionObserver(
 
 targets.forEach(target => observer.observe(target));
 
-const form = document.getElementById("contact-form");
+const form = document.getElementById("contact");
 const popup = document.getElementById("popup");
 const closeBtn = document.getElementById("close-popup");
 
