@@ -403,6 +403,7 @@ small{
 
 
 
+
 .socials{
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
@@ -422,6 +423,16 @@ small{
   margin: 0 auto; 
   border-radius: 10px;  
   margin: 100px 50px;     
+}
+
+.success{
+  display: flex;
+  flex-direction: column;
+  margin: 300px;
+}
+
+.success p{
+  text-align: center;
 }
 
 .form-container h2{
@@ -843,6 +854,10 @@ svg:hover{
 
   .card{
     padding: 0 10px;
+  }
+
+  .success {
+    margin: 100px 50px;
   }
 }
 
