@@ -19,12 +19,26 @@ const form = document.getElementById("contact-form");
 const popup = document.getElementById("popup");
 const closeBtn = document.getElementById("close-popup");
 
-form.addEventListener("submit", function() {
-  // Show custom popup
-  setTimeout(() => {
+form.addEventListener("submit", function(event) {
+  event.preventDefault(); // ⚠️ Prevent default Netlify popup
+
+  const formData = new FormData(form);
+
+  // Submit to Netlify using fetch
+  fetch("/", {
+    method: "POST",
+    body: formData,
+    headers: { "Accept": "application/x-www-form-urlencoded" }
+  })
+  .then(() => {
+    // Show custom popup
     popup.style.display = "block";
     form.reset();
-  }, 100);
+  })
+  .catch((error) => {
+    alert("There was an error submitting the form.");
+    console.error(error);
+  });
 });
 
 closeBtn.addEventListener("click", () => {
