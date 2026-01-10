@@ -744,7 +744,6 @@ svg:hover{
 
   .image-wrapper.in-view .overlay {
   opacity: 1;
-  
   }
 
   .card{
@@ -753,7 +752,7 @@ svg:hover{
   }
 
   .overlay li{
-  font-size: 13px;
+  font-size: 14.5px;
   }
 
   .image1 img{
@@ -861,7 +860,7 @@ svg:hover{
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 420px) {
 
   .overlay p{
     font-size: 14px;
