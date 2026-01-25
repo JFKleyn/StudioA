@@ -139,11 +139,11 @@ nav a:active{
 }
 
 .p1 {
+  padding-right: 40px; 
+  padding-left: 20px;
   display: flex;
-  flex-direction: column; 
-  justify-content: center;
-  height: 100%; 
-  width: 100%;          
+  flex-direction: column;
+  gap: 20px;     
 }
 
 .p1 p{
@@ -155,7 +155,6 @@ nav a:active{
   width: 100%; /* fills the parent div */
     font-size: 1.8rem;
   font-weight: 100;
-  padding: 0px 120px 0px 80px;
   font-size: 28px;
 }
 
@@ -642,6 +641,18 @@ svg:hover{
   scale: 1.1;
 }
 
+#menu-toggle{
+    display: none;
+  }
+
+  .menu-icon{
+    display: none;
+  }
+
+  .nav-options{
+    display: none;
+  }
+
 
 @media (hover: hover) {
   .vision:hover .overlay {
@@ -771,11 +782,6 @@ svg:hover{
   transform: scale(1.05);
 }
 
-
-
-
-  
-
   .form-container h2{
     font-size: 24px;
   }
@@ -800,10 +806,7 @@ svg:hover{
 }
 
 @media(max-width: 900px){
-  .logo-container h2 {
-    visibility: hidden;
-    width: 0px
-  }
+ 
 
   .navigation-container{
     gap: 0;
@@ -832,11 +835,75 @@ svg:hover{
   .overlay li{
     font-size: 10px;
   }
-
-  
 }
 
 @media (max-width: 768px) {
+  
+  a{
+    font-size: 14px;
+  }
+  
+  .nav {
+  position: relative;
+}
+
+.menu-icon {
+  font-size: 28px;
+  display: block;
+  position: absolute;
+  padding-right: 20px;
+  right: 0;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#ourdirector{
+  display: none;
+}
+
+#contactus{
+  display: none;
+}
+
+#gallery{
+  display: none;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+#menu-toggle:checked + .menu-icon + .menu {
+  display: block;
+}
+
+.menu li {
+  padding: 12px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-options{
+    display: block;
+  }
+
+  .menu{
+    position: absolute;
+    top: 80px;          /* adjust */
+    right: 20px;        /* adjust */
+    background: rgba(0,0,0,0.9);
+    padding: 12px 16px;
+    border-radius: 10px;
+    z-index: 1000;
+  }
 
   .container4{
     grid-template-columns: 1fr;
@@ -873,8 +940,6 @@ svg:hover{
     margin: 0 auto;
     width: 470px;
   }
-  
-
 }
 
 @media(max-width:600px){
@@ -901,7 +966,7 @@ svg:hover{
 
   .p1 p{
     font-size: 15px;
-    padding: 0 50px 0 50px;
+    padding: 0 0 0 20px;
   }
 
   .image1{
@@ -972,6 +1037,8 @@ svg:hover{
   .success {
     margin: 100px 50px;
   }
+
+
 }
 
 @media (max-width: 420px) {
@@ -983,7 +1050,17 @@ svg:hover{
   .overlay li{
     font-size: 10.5px;
   }
+
+  .logo{
+    width: 100px;
+  }
+
+  .navigation-container h2{
+    font-size: 22px;
+  }
 }
+
+
 
 
 
